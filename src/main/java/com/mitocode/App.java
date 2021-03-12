@@ -101,7 +101,6 @@ public class App {
         Map<String, List<Product>> collect1 = products.stream()
                                                 .filter(p -> p.getPrice() > 20)
                                                 .collect(Collectors.groupingBy(Product::getName));
-        //System.out.println(collect1);
         // Counting
         Map<String, Long> collect2 = products.stream()
                                             .collect(Collectors.groupingBy(
